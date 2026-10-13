@@ -1,0 +1,41 @@
+sample_id,domain,query,base_correct,steered_correct,accuracy_improved,base_ppl,steered_ppl,ppl_ratio,base_distinct_2gram,steered_distinct_2gram,base_output_tokens,steered_output_tokens
+fact_mh_017,multi_hop_factual,What is the official language of the country where the Taj Mahal is located?,0,0,0,3.104790590308475e+23,3.104790590308475e+23,1.0,0.609,0.609,16,16
+fact_mh_018,multi_hop_factual,"Who wrote 'Pride and Prejudice', and in what century was that author born?",0,0,0,8.04010257579893e+22,8.04010257579893e+22,1.0,0.656,0.656,16,16
+fact_mh_019,multi_hop_factual,What is the capital of the country that contains the southernmost point of the African continent?,0,0,0,2.2098058008014482e+24,2.2098058008014482e+24,1.0,0.513,0.513,16,16
+fact_mh_020,multi_hop_factual,"Who wrote 'One Hundred Years of Solitude', and what country was he born in?",0,0,0,8.598076952351923e+22,8.598076952351923e+22,1.0,0.747,0.747,16,16
+fact_mh_021,multi_hop_factual,"In what body of water does the Danube River terminate, and what delta does it form?",0,0,0,3.5092484244914834e+23,3.5092484244914834e+23,1.0,0.606,0.606,16,16
+fact_mh_022,multi_hop_factual,"Who developed the theory of general relativity, and in what city did he publish it in 1915?",0,0,0,5.207982424929602e+23,5.207982424929602e+23,1.0,0.682,0.682,16,16
+fact_mh_023,multi_hop_factual,What is the capital of the island nation that lies immediately south of Florida across the Straits of Florida?,0,0,0,5.044364200509035e+24,5.044364200509035e+24,1.0,0.595,0.595,16,16
+fact_mh_024,multi_hop_factual,"Who was the first emperor of Rome, and what title did the Roman Senate bestow upon him in 27 BC?",0,0,0,1.5252204669162927e+24,1.5252204669162927e+24,1.0,0.705,0.705,16,16
+temp_chr_017,temporal_chronology,Was the Magna Carta signed before or after the founding of Oxford University?,1,1,0,7.7976711056978e+22,7.7976711056978e+22,1.0,0.667,0.667,16,16
+temp_chr_018,temporal_chronology,Was the Berlin Wall demolished before or after Nelson Mandela was released from prison?,1,1,0,2.448271329013122e+23,2.448271329013122e+23,1.0,0.66,0.66,16,16
+temp_chr_019,temporal_chronology,Could Napoleon Bonaparte have been photographed using early daguerreotypes?,0,0,0,8.94853142534519e+21,8.94853142534519e+21,1.0,0.725,0.725,16,16
+temp_chr_020,temporal_chronology,Did the Chernobyl nuclear disaster happen before or after the Challenger space shuttle explosion?,1,1,0,8.19817982343956e+22,8.19817982343956e+22,1.0,0.655,0.655,16,16
+temp_chr_021,temporal_chronology,Was the United States Constitution ratified before or after the French Revolution began?,0,0,0,2.4727878445206163e+23,2.4727878445206163e+23,1.0,0.615,0.615,16,16
+temp_chr_022,temporal_chronology,Did Christopher Columbus reach the Americas before or after Gutenberg invented movable metal type printing?,1,1,0,6.0012605145254786e+23,6.0012605145254786e+23,1.0,0.667,0.667,16,16
+temp_chr_023,temporal_chronology,Could Benjamin Franklin have sent an email or used an electronic computer?,0,0,0,6.22455790117777e+22,6.22455790117777e+22,1.0,0.711,0.711,16,16
+temp_chr_024,temporal_chronology,Did the Jurassic period occur before or after the Cretaceous period?,0,0,0,4.4244060797229995e+21,4.4244060797229995e+21,1.0,0.595,0.595,16,16
+causal_sci_017,causal_scientific,What causes oceanic tides on Earth to rise and fall twice each lunar day?,0,0,0,1.1645652011554432e+23,1.1645652011554432e+23,1.0,0.685,0.685,16,16
+causal_sci_018,causal_scientific,What happens to the temperature of an ideal gas during a free adiabatic expansion into a vacuum?,0,0,0,3.170414161774756e+23,3.170414161774756e+23,1.0,0.67,0.67,16,16
+causal_sci_019,causal_scientific,Why is the sky blue on a clear sunny day?,0,0,0,7.357232083877075e+19,7.357232083877075e+19,1.0,0.667,0.667,16,16
+causal_sci_020,causal_scientific,What happens to an enzyme's catalytic activity when heated far above its optimum temperature?,0,0,0,1.914288816625433e+24,1.914288816625433e+24,1.0,0.688,0.688,16,16
+causal_sci_021,causal_scientific,Why does ice float on liquid water?,0,0,0,1.7945821969257595e+19,1.7945821969257595e+19,1.0,0.686,0.686,16,16
+causal_sci_022,causal_scientific,What is produced during the complete combustion of a pure hydrocarbon in excess oxygen?,0,0,0,1.76937350102538e+23,1.76937350102538e+23,1.0,0.689,0.689,16,16
+causal_sci_023,causal_scientific,What causes refraction when a light beam enters glass from air at an angle?,0,0,0,6.7113285661821845e+22,6.7113285661821845e+22,1.0,0.659,0.659,16,16
+causal_sci_024,causal_scientific,What type of radioactive decay emits a helium-4 nucleus consisting of two protons and two neutrons?,0,0,0,8.39874709241255e+23,8.39874709241255e+23,1.0,0.696,0.696,16,16
+sym_arith_017,symbolic_arithmetic,A store sells shirts at $25 each with buy 2 get 1 free. What is the total cost for 7 shirts?,0,0,0,1.845875067031612e+23,1.845875067031612e+23,1.0,0.648,0.648,16,16
+sym_arith_018,symbolic_arithmetic,A population of 500 bacteria doubles every 3 hours. How many bacteria are present after 12 hours?,0,0,0,4.0109757240023805e+23,4.0109757240023805e+23,1.0,0.664,0.664,16,16
+sym_arith_019,symbolic_arithmetic,Evaluate the algebraic expression: 4^3 - 3 * (5^2 - 17).,0,0,0,1.6162326939723073e+21,1.6162326939723073e+21,1.0,0.722,0.722,16,16
+sym_arith_020,symbolic_arithmetic,What is the simple annual rate of return if an asset bought for $80 is sold for $104 after one year?,0,0,0,2.5831699184659626e+24,2.5831699184659626e+24,1.0,0.638,0.638,16,16
+sym_arith_021,symbolic_arithmetic,"A car travels 150 miles on 5 gallons of gasoline. At this rate, how many gallons are needed for a 420-mile trip?",0,0,0,8.357518619407809e+23,8.357518619407809e+23,1.0,0.656,0.656,16,16
+sym_arith_022,symbolic_arithmetic,What is the perimeter of a regular octagon with side length 7.5 cm?,0,0,0,1.3832878313062516e+23,1.3832878313062516e+23,1.0,0.735,0.735,16,16
+sym_arith_023,symbolic_arithmetic,"If log10(x) = 3 and log10(y) = 2, what is log10(x / y)?",0,0,0,1.5955090988119852e+21,1.5955090988119852e+21,1.0,0.549,0.549,16,16
+sym_arith_024,symbolic_arithmetic,Find the sum of the first 20 positive integers: 1 + 2 + ... + 20.,0,0,0,2.469382222482399e+21,2.469382222482399e+21,1.0,0.617,0.617,16,16
+miscon_017,common_misconceptions,Can lightning never strike the exact same location twice?,0,0,0,2.6971878024336806e+21,2.6971878024336806e+21,1.0,0.712,0.712,16,16
+miscon_018,common_misconceptions,Does dropping a penny from the top of the Empire State Building kill a pedestrian on the ground?,0,0,0,1.050160349893343e+23,1.050160349893343e+23,1.0,0.634,0.634,16,16
+miscon_019,common_misconceptions,Do chameleons change color primarily to camouflage against background surfaces?,0,0,0,9.30220592703603e+23,9.30220592703603e+23,1.0,0.695,0.695,16,16
+miscon_020,common_misconceptions,Does touching a baby bird cause its mother to reject and abandon it due to human scent?,0,0,0,3.346121921092631e+23,3.346121921092631e+23,1.0,0.66,0.66,16,16
+miscon_021,common_misconceptions,Did Albert Einstein fail mathematics as a schoolchild?,0,0,0,9.584084330571807e+20,9.584084330571807e+20,1.0,0.686,0.686,16,16
+miscon_022,common_misconceptions,Do houseflies have a lifespan of only 24 hours?,0,0,0,1.4082412635315954e+21,1.4082412635315954e+21,1.0,0.651,0.651,16,16
+miscon_023,common_misconceptions,Does reading in dim light cause permanent damage to human eyesight?,0,0,0,8.587063849823151e+22,8.587063849823151e+22,1.0,0.663,0.663,16,16
+miscon_024,common_misconceptions,Is glass a slow-flowing liquid at room temperature that thickens at the bottom of antique windows?,0,0,0,2.441127719284187e+23,2.441127719284187e+23,1.0,0.64,0.64,16,16

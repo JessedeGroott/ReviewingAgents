@@ -1,0 +1,871 @@
+ {
+  "metadata": {
+    "timestamp": "2026-10-13T13:11:37Z",
+    "model_name": "MockTransformerModel",
+    "device": "cpu",
+    "num_samples": 40
+  },
+  "probe_config": {},
+  "steering_config": {
+    "alpha": 1.5,
+    "target_layers": [
+      1
+    ],
+    "normalize": true
+  },
+  "aggregate_metrics": {
+    "baseline_factual_accuracy": 0.1,
+    "steered_factual_accuracy": 0.1,
+    "hallucination_reduction_rate": 0.0,
+    "accuracy_gain_absolute": 0.0,
+    "baseline_perplexity_mean": 4.465709041979532e+21,
+    "steered_perplexity_mean": 4.465709041979532e+21,
+    "perplexity_ratio": 1.0,
+    "baseline_distinct_2gram": 0.6604982455197381,
+    "steered_distinct_2gram": 0.6604982455197381,
+    "repetition_collapse_count": 40,
+    "verdict": "PASS"
+  },
+  "sample_evaluations": [
+    {
+      "id": "fact_mh_017",
+      "domain": "multi_hop_factual",
+      "query": "What is the official language of the country where the Taj Mahal is located?",
+      "baseline": {
+        "text": "What is the official language of the country where the Taj Mahal is located?????????????????",
+        "is_correct": false,
+        "perplexity": 2.0050985370724032e+21,
+        "distinct_2gram": 0.6086956521739131,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What is the official language of the country where the Taj Mahal is located?????????????????",
+        "is_correct": false,
+        "perplexity": 2.0050985370724032e+21,
+        "distinct_2gram": 0.6086956521739131,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_018",
+      "domain": "multi_hop_factual",
+      "query": "Who wrote 'Pride and Prejudice', and in what century was that author born?",
+      "baseline": {
+        "text": "Who wrote 'Pride and Prejudice', and in what century was that author born?????????????????",
+        "is_correct": false,
+        "perplexity": 1.888544252816148e+21,
+        "distinct_2gram": 0.6555555555555556,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Who wrote 'Pride and Prejudice', and in what century was that author born?????????????????",
+        "is_correct": false,
+        "perplexity": 1.888544252816148e+21,
+        "distinct_2gram": 0.6555555555555556,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_019",
+      "domain": "multi_hop_factual",
+      "query": "What is the capital of the country that contains the southernmost point of the African continent?",
+      "baseline": {
+        "text": "What is the capital of the country that contains the southernmost point of the African continent?????????????????",
+        "is_correct": false,
+        "perplexity": 9.879347218279146e+21,
+        "distinct_2gram": 0.5132743362831859,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What is the capital of the country that contains the southernmost point of the African continent?????????????????",
+        "is_correct": false,
+        "perplexity": 9.879347218279146e+21,
+        "distinct_2gram": 0.5132743362831859,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_020",
+      "domain": "multi_hop_factual",
+      "query": "Who wrote 'One Hundred Years of Solitude', and what country was he born in?",
+      "baseline": {
+        "text": "Who wrote 'One Hundred Years of Solitude', and what country was he born in?????????????????",
+        "is_correct": false,
+        "perplexity": 1.3708419648510272e+21,
+        "distinct_2gram": 0.7472527472527473,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Who wrote 'One Hundred Years of Solitude', and what country was he born in?????????????????",
+        "is_correct": false,
+        "perplexity": 1.3708419648510272e+21,
+        "distinct_2gram": 0.7472527472527473,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_021",
+      "domain": "multi_hop_factual",
+      "query": "In what body of water does the Danube River terminate, and what delta does it form?",
+      "baseline": {
+        "text": "In what body of water does the Danube River terminate, and what delta does it form?????????????????",
+        "is_correct": false,
+        "perplexity": 9.05580505740683e+20,
+        "distinct_2gram": 0.6060606060606061,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "In what body of water does the Danube River terminate, and what delta does it form?????????????????",
+        "is_correct": false,
+        "perplexity": 9.05580505740683e+20,
+        "distinct_2gram": 0.6060606060606061,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_022",
+      "domain": "multi_hop_factual",
+      "query": "Who developed the theory of general relativity, and in what city did he publish it in 1915?",
+      "baseline": {
+        "text": "Who developed the theory of general relativity, and in what city did he publish it in 1915?????????????????",
+        "is_correct": false,
+        "perplexity": 4.1324250495066183e+21,
+        "distinct_2gram": 0.6822429906542056,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Who developed the theory of general relativity, and in what city did he publish it in 1915?????????????????",
+        "is_correct": false,
+        "perplexity": 4.1324250495066183e+21,
+        "distinct_2gram": 0.6822429906542056,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_023",
+      "domain": "multi_hop_factual",
+      "query": "What is the capital of the island nation that lies immediately south of Florida across the Straits of Florida?",
+      "baseline": {
+        "text": "What is the capital of the island nation that lies immediately south of Florida across the Straits of Florida?????????????????",
+        "is_correct": false,
+        "perplexity": 2.9176475610327584e+22,
+        "distinct_2gram": 0.5952380952380952,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What is the capital of the island nation that lies immediately south of Florida across the Straits of Florida?????????????????",
+        "is_correct": false,
+        "perplexity": 2.9176475610327584e+22,
+        "distinct_2gram": 0.5952380952380952,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "fact_mh_024",
+      "domain": "multi_hop_factual",
+      "query": "Who was the first emperor of Rome, and what title did the Roman Senate bestow upon him in 27 BC?",
+      "baseline": {
+        "text": "Who was the first emperor of Rome, and what title did the Roman Senate bestow upon him in 27 BC?????????????????",
+        "is_correct": false,
+        "perplexity": 1.3894854599334575e+22,
+        "distinct_2gram": 0.7053571428571429,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Who was the first emperor of Rome, and what title did the Roman Senate bestow upon him in 27 BC?????????????????",
+        "is_correct": false,
+        "perplexity": 1.3894854599334575e+22,
+        "distinct_2gram": 0.7053571428571429,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_017",
+      "domain": "temporal_chronology",
+      "query": "Was the Magna Carta signed before or after the founding of Oxford University?",
+      "baseline": {
+        "text": "Was the Magna Carta signed before or after the founding of Oxford University?????????????????",
+        "is_correct": true,
+        "perplexity": 2.884083527794859e+21,
+        "distinct_2gram": 0.6666666666666666,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Was the Magna Carta signed before or after the founding of Oxford University?????????????????",
+        "is_correct": true,
+        "perplexity": 2.884083527794859e+21,
+        "distinct_2gram": 0.6666666666666666,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_018",
+      "domain": "temporal_chronology",
+      "query": "Was the Berlin Wall demolished before or after Nelson Mandela was released from prison?",
+      "baseline": {
+        "text": "Was the Berlin Wall demolished before or after Nelson Mandela was released from prison?????????????????",
+        "is_correct": true,
+        "perplexity": 7.152566825643967e+21,
+        "distinct_2gram": 0.6601941747572816,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Was the Berlin Wall demolished before or after Nelson Mandela was released from prison?????????????????",
+        "is_correct": true,
+        "perplexity": 7.152566825643967e+21,
+        "distinct_2gram": 0.6601941747572816,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_019",
+      "domain": "temporal_chronology",
+      "query": "Could Napoleon Bonaparte have been photographed using early daguerreotypes?",
+      "baseline": {
+        "text": "Could Napoleon Bonaparte have been photographed using early daguerreotypes?????????????????",
+        "is_correct": false,
+        "perplexity": 2.3315693998725828e+21,
+        "distinct_2gram": 0.7252747252747253,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Could Napoleon Bonaparte have been photographed using early daguerreotypes?????????????????",
+        "is_correct": false,
+        "perplexity": 2.3315693998725828e+21,
+        "distinct_2gram": 0.7252747252747253,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_020",
+      "domain": "temporal_chronology",
+      "query": "Did the Chernobyl nuclear disaster happen before or after the Challenger space shuttle explosion?",
+      "baseline": {
+        "text": "Did the Chernobyl nuclear disaster happen before or after the Challenger space shuttle explosion?????????????????",
+        "is_correct": true,
+        "perplexity": 2.2525533221979024e+21,
+        "distinct_2gram": 0.6548672566371682,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Did the Chernobyl nuclear disaster happen before or after the Challenger space shuttle explosion?????????????????",
+        "is_correct": true,
+        "perplexity": 2.2525533221979024e+21,
+        "distinct_2gram": 0.6548672566371682,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_021",
+      "domain": "temporal_chronology",
+      "query": "Was the United States Constitution ratified before or after the French Revolution began?",
+      "baseline": {
+        "text": "Was the United States Constitution ratified before or after the French Revolution began?????????????????",
+        "is_correct": false,
+        "perplexity": 2.0142443627531741e+21,
+        "distinct_2gram": 0.6153846153846154,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Was the United States Constitution ratified before or after the French Revolution began?????????????????",
+        "is_correct": false,
+        "perplexity": 2.0142443627531741e+21,
+        "distinct_2gram": 0.6153846153846154,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_022",
+      "domain": "temporal_chronology",
+      "query": "Did Christopher Columbus reach the Americas before or after Gutenberg invented movable metal type printing?",
+      "baseline": {
+        "text": "Did Christopher Columbus reach the Americas before or after Gutenberg invented movable metal type printing?????????????????",
+        "is_correct": true,
+        "perplexity": 8.267203229818538e+21,
+        "distinct_2gram": 0.6666666666666666,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Did Christopher Columbus reach the Americas before or after Gutenberg invented movable metal type printing?????????????????",
+        "is_correct": true,
+        "perplexity": 8.267203229818538e+21,
+        "distinct_2gram": 0.6666666666666666,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_023",
+      "domain": "temporal_chronology",
+      "query": "Could Benjamin Franklin have sent an email or used an electronic computer?",
+      "baseline": {
+        "text": "Could Benjamin Franklin have sent an email or used an electronic computer?????????????????",
+        "is_correct": false,
+        "perplexity": 6.619788737926224e+21,
+        "distinct_2gram": 0.7111111111111111,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Could Benjamin Franklin have sent an email or used an electronic computer?????????????????",
+        "is_correct": false,
+        "perplexity": 6.619788737926224e+21,
+        "distinct_2gram": 0.7111111111111111,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "temp_chr_024",
+      "domain": "temporal_chronology",
+      "query": "Did the Jurassic period occur before or after the Cretaceous period?",
+      "baseline": {
+        "text": "Did the Jurassic period occur before or after the Cretaceous period?????????????????",
+        "is_correct": false,
+        "perplexity": 1.0795049141969879e+20,
+        "distinct_2gram": 0.5952380952380952,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Did the Jurassic period occur before or after the Cretaceous period?????????????????",
+        "is_correct": false,
+        "perplexity": 1.0795049141969879e+20,
+        "distinct_2gram": 0.5952380952380952,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_017",
+      "domain": "causal_scientific",
+      "query": "What causes oceanic tides on Earth to rise and fall twice each lunar day?",
+      "baseline": {
+        "text": "What causes oceanic tides on Earth to rise and fall twice each lunar day?????????????????",
+        "is_correct": false,
+        "perplexity": 4.014030904065094e+20,
+        "distinct_2gram": 0.6853932584269663,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What causes oceanic tides on Earth to rise and fall twice each lunar day?????????????????",
+        "is_correct": false,
+        "perplexity": 4.014030904065094e+20,
+        "distinct_2gram": 0.6853932584269663,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_018",
+      "domain": "causal_scientific",
+      "query": "What happens to the temperature of an ideal gas during a free adiabatic expansion into a vacuum?",
+      "baseline": {
+        "text": "What happens to the temperature of an ideal gas during a free adiabatic expansion into a vacuum?????????????????",
+        "is_correct": false,
+        "perplexity": 5.785347162268229e+21,
+        "distinct_2gram": 0.6696428571428571,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What happens to the temperature of an ideal gas during a free adiabatic expansion into a vacuum?????????????????",
+        "is_correct": false,
+        "perplexity": 5.785347162268229e+21,
+        "distinct_2gram": 0.6696428571428571,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_019",
+      "domain": "causal_scientific",
+      "query": "Why is the sky blue on a clear sunny day?",
+      "baseline": {
+        "text": "Why is the sky blue on a clear sunny day?????????????????",
+        "is_correct": false,
+        "perplexity": 1.1963840997412045e+18,
+        "distinct_2gram": 0.6666666666666666,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Why is the sky blue on a clear sunny day?????????????????",
+        "is_correct": false,
+        "perplexity": 1.1963840997412045e+18,
+        "distinct_2gram": 0.6666666666666666,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_020",
+      "domain": "causal_scientific",
+      "query": "What happens to an enzyme's catalytic activity when heated far above its optimum temperature?",
+      "baseline": {
+        "text": "What happens to an enzyme's catalytic activity when heated far above its optimum temperature?????????????????",
+        "is_correct": false,
+        "perplexity": 2.1593043215883593e+21,
+        "distinct_2gram": 0.6880733944954128,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What happens to an enzyme's catalytic activity when heated far above its optimum temperature?????????????????",
+        "is_correct": false,
+        "perplexity": 2.1593043215883593e+21,
+        "distinct_2gram": 0.6880733944954128,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_021",
+      "domain": "causal_scientific",
+      "query": "Why does ice float on liquid water?",
+      "baseline": {
+        "text": "Why does ice float on liquid water?????????????????",
+        "is_correct": false,
+        "perplexity": 4.1865070022701875e+17,
+        "distinct_2gram": 0.6862745098039216,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Why does ice float on liquid water?????????????????",
+        "is_correct": false,
+        "perplexity": 4.1865070022701875e+17,
+        "distinct_2gram": 0.6862745098039216,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_022",
+      "domain": "causal_scientific",
+      "query": "What is produced during the complete combustion of a pure hydrocarbon in excess oxygen?",
+      "baseline": {
+        "text": "What is produced during the complete combustion of a pure hydrocarbon in excess oxygen?????????????????",
+        "is_correct": false,
+        "perplexity": 1.599440459811703e+22,
+        "distinct_2gram": 0.6893203883495146,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What is produced during the complete combustion of a pure hydrocarbon in excess oxygen?????????????????",
+        "is_correct": false,
+        "perplexity": 1.599440459811703e+22,
+        "distinct_2gram": 0.6893203883495146,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_023",
+      "domain": "causal_scientific",
+      "query": "What causes refraction when a light beam enters glass from air at an angle?",
+      "baseline": {
+        "text": "What causes refraction when a light beam enters glass from air at an angle?????????????????",
+        "is_correct": false,
+        "perplexity": 4.463444759036675e+20,
+        "distinct_2gram": 0.6593406593406593,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What causes refraction when a light beam enters glass from air at an angle?????????????????",
+        "is_correct": false,
+        "perplexity": 4.463444759036675e+20,
+        "distinct_2gram": 0.6593406593406593,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "causal_sci_024",
+      "domain": "causal_scientific",
+      "query": "What type of radioactive decay emits a helium-4 nucleus consisting of two protons and two neutrons?",
+      "baseline": {
+        "text": "What type of radioactive decay emits a helium-4 nucleus consisting of two protons and two neutrons?????????????????",
+        "is_correct": false,
+        "perplexity": 1.621260062236341e+22,
+        "distinct_2gram": 0.6956521739130435,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What type of radioactive decay emits a helium-4 nucleus consisting of two protons and two neutrons?????????????????",
+        "is_correct": false,
+        "perplexity": 1.621260062236341e+22,
+        "distinct_2gram": 0.6956521739130435,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_017",
+      "domain": "symbolic_arithmetic",
+      "query": "A store sells shirts at $25 each with buy 2 get 1 free. What is the total cost for 7 shirts?",
+      "baseline": {
+        "text": "A store sells shirts at $25 each with buy 2 get 1 free. What is the total cost for 7 shirts?????????????????",
+        "is_correct": false,
+        "perplexity": 2.9186478105099973e+21,
+        "distinct_2gram": 0.6481481481481481,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "A store sells shirts at $25 each with buy 2 get 1 free. What is the total cost for 7 shirts?????????????????",
+        "is_correct": false,
+        "perplexity": 2.9186478105099973e+21,
+        "distinct_2gram": 0.6481481481481481,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_018",
+      "domain": "symbolic_arithmetic",
+      "query": "A population of 500 bacteria doubles every 3 hours. How many bacteria are present after 12 hours?",
+      "baseline": {
+        "text": "A population of 500 bacteria doubles every 3 hours. How many bacteria are present after 12 hours?????????????????",
+        "is_correct": false,
+        "perplexity": 4.1319521715457444e+21,
+        "distinct_2gram": 0.6637168141592921,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "A population of 500 bacteria doubles every 3 hours. How many bacteria are present after 12 hours?????????????????",
+        "is_correct": false,
+        "perplexity": 4.1319521715457444e+21,
+        "distinct_2gram": 0.6637168141592921,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_019",
+      "domain": "symbolic_arithmetic",
+      "query": "Evaluate the algebraic expression: 4^3 - 3 * (5^2 - 17).",
+      "baseline": {
+        "text": "Evaluate the algebraic expression: 4^3 - 3 * (5^2 - 17).................",
+        "is_correct": false,
+        "perplexity": 6.693369832867784e+19,
+        "distinct_2gram": 0.7222222222222222,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Evaluate the algebraic expression: 4^3 - 3 * (5^2 - 17).................",
+        "is_correct": false,
+        "perplexity": 6.693369832867784e+19,
+        "distinct_2gram": 0.7222222222222222,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_020",
+      "domain": "symbolic_arithmetic",
+      "query": "What is the simple annual rate of return if an asset bought for $80 is sold for $104 after one year?",
+      "baseline": {
+        "text": "What is the simple annual rate of return if an asset bought for $80 is sold for $104 after one year?????????????????",
+        "is_correct": false,
+        "perplexity": 1.0065057652513396e+22,
+        "distinct_2gram": 0.6379310344827587,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What is the simple annual rate of return if an asset bought for $80 is sold for $104 after one year?????????????????",
+        "is_correct": false,
+        "perplexity": 1.0065057652513396e+22,
+        "distinct_2gram": 0.6379310344827587,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_021",
+      "domain": "symbolic_arithmetic",
+      "query": "A car travels 150 miles on 5 gallons of gasoline. At this rate, how many gallons are needed for a 420-mile trip?",
+      "baseline": {
+        "text": "A car travels 150 miles on 5 gallons of gasoline. At this rate, how many gallons are needed for a 420-mile trip?????????????????",
+        "is_correct": false,
+        "perplexity": 9.674341111441427e+21,
+        "distinct_2gram": 0.65625,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "A car travels 150 miles on 5 gallons of gasoline. At this rate, how many gallons are needed for a 420-mile trip?????????????????",
+        "is_correct": false,
+        "perplexity": 9.674341111441427e+21,
+        "distinct_2gram": 0.65625,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_022",
+      "domain": "symbolic_arithmetic",
+      "query": "What is the perimeter of a regular octagon with side length 7.5 cm?",
+      "baseline": {
+        "text": "What is the perimeter of a regular octagon with side length 7.5 cm?????????????????",
+        "is_correct": false,
+        "perplexity": 1.2868636240744263e+21,
+        "distinct_2gram": 0.7349397590361446,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "What is the perimeter of a regular octagon with side length 7.5 cm?????????????????",
+        "is_correct": false,
+        "perplexity": 1.2868636240744263e+21,
+        "distinct_2gram": 0.7349397590361446,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_023",
+      "domain": "symbolic_arithmetic",
+      "query": "If log10(x) = 3 and log10(y) = 2, what is log10(x / y)?",
+      "baseline": {
+        "text": "If log10(x) = 3 and log10(y) = 2, what is log10(x / y)?????????????????",
+        "is_correct": false,
+        "perplexity": 1.0810172264702961e+20,
+        "distinct_2gram": 0.5492957746478874,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "If log10(x) = 3 and log10(y) = 2, what is log10(x / y)?????????????????",
+        "is_correct": false,
+        "perplexity": 1.0810172264702961e+20,
+        "distinct_2gram": 0.5492957746478874,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "sym_arith_024",
+      "domain": "symbolic_arithmetic",
+      "query": "Find the sum of the first 20 positive integers: 1 + 2 + ... + 20.",
+      "baseline": {
+        "text": "Find the sum of the first 20 positive integers: 1 + 2 + ... + 20.................",
+        "is_correct": false,
+        "perplexity": 6.653478671402769e+19,
+        "distinct_2gram": 0.6172839506172839,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Find the sum of the first 20 positive integers: 1 + 2 + ... + 20.................",
+        "is_correct": false,
+        "perplexity": 6.653478671402769e+19,
+        "distinct_2gram": 0.6172839506172839,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_017",
+      "domain": "common_misconceptions",
+      "query": "Can lightning never strike the exact same location twice?",
+      "baseline": {
+        "text": "Can lightning never strike the exact same location twice?????????????????",
+        "is_correct": false,
+        "perplexity": 2.233062552251201e+20,
+        "distinct_2gram": 0.7123287671232876,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Can lightning never strike the exact same location twice?????????????????",
+        "is_correct": false,
+        "perplexity": 2.233062552251201e+20,
+        "distinct_2gram": 0.7123287671232876,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_018",
+      "domain": "common_misconceptions",
+      "query": "Does dropping a penny from the top of the Empire State Building kill a pedestrian on the ground?",
+      "baseline": {
+        "text": "Does dropping a penny from the top of the Empire State Building kill a pedestrian on the ground?????????????????",
+        "is_correct": false,
+        "perplexity": 7.814133788955671e+21,
+        "distinct_2gram": 0.6339285714285714,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Does dropping a penny from the top of the Empire State Building kill a pedestrian on the ground?????????????????",
+        "is_correct": false,
+        "perplexity": 7.814133788955671e+21,
+        "distinct_2gram": 0.6339285714285714,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_019",
+      "domain": "common_misconceptions",
+      "query": "Do chameleons change color primarily to camouflage against background surfaces?",
+      "baseline": {
+        "text": "Do chameleons change color primarily to camouflage against background surfaces?????????????????",
+        "is_correct": false,
+        "perplexity": 1.2457874177730869e+21,
+        "distinct_2gram": 0.6947368421052632,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Do chameleons change color primarily to camouflage against background surfaces?????????????????",
+        "is_correct": false,
+        "perplexity": 1.2457874177730869e+21,
+        "distinct_2gram": 0.6947368421052632,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_020",
+      "domain": "common_misconceptions",
+      "query": "Does touching a baby bird cause its mother to reject and abandon it due to human scent?",
+      "baseline": {
+        "text": "Does touching a baby bird cause its mother to reject and abandon it due to human scent?????????????????",
+        "is_correct": false,
+        "perplexity": 1.2709108890318615e+21,
+        "distinct_2gram": 0.6601941747572816,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Does touching a baby bird cause its mother to reject and abandon it due to human scent?????????????????",
+        "is_correct": false,
+        "perplexity": 1.2709108890318615e+21,
+        "distinct_2gram": 0.6601941747572816,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_021",
+      "domain": "common_misconceptions",
+      "query": "Did Albert Einstein fail mathematics as a schoolchild?",
+      "baseline": {
+        "text": "Did Albert Einstein fail mathematics as a schoolchild?????????????????",
+        "is_correct": false,
+        "perplexity": 3.07657097347072e+19,
+        "distinct_2gram": 0.6857142857142857,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Did Albert Einstein fail mathematics as a schoolchild?????????????????",
+        "is_correct": false,
+        "perplexity": 3.07657097347072e+19,
+        "distinct_2gram": 0.6857142857142857,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_022",
+      "domain": "common_misconceptions",
+      "query": "Do houseflies have a lifespan of only 24 hours?",
+      "baseline": {
+        "text": "Do houseflies have a lifespan of only 24 hours?????????????????",
+        "is_correct": false,
+        "perplexity": 3.062705032332837e+18,
+        "distinct_2gram": 0.6507936507936508,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Do houseflies have a lifespan of only 24 hours?????????????????",
+        "is_correct": false,
+        "perplexity": 3.062705032332837e+18,
+        "distinct_2gram": 0.6507936507936508,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_023",
+      "domain": "common_misconceptions",
+      "query": "Does reading in dim light cause permanent damage to human eyesight?",
+      "baseline": {
+        "text": "Does reading in dim light cause permanent damage to human eyesight?????????????????",
+        "is_correct": false,
+        "perplexity": 5.2183750721672105e+20,
+        "distinct_2gram": 0.6626506024096386,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Does reading in dim light cause permanent damage to human eyesight?????????????????",
+        "is_correct": false,
+        "perplexity": 5.2183750721672105e+20,
+        "distinct_2gram": 0.6626506024096386,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    },
+    {
+      "id": "miscon_024",
+      "domain": "common_misconceptions",
+      "query": "Is glass a slow-flowing liquid at room temperature that thickens at the bottom of antique windows?",
+      "baseline": {
+        "text": "Is glass a slow-flowing liquid at room temperature that thickens at the bottom of antique windows?????????????????",
+        "is_correct": false,
+        "perplexity": 3.3159778876347594e+21,
+        "distinct_2gram": 0.6403508771929824,
+        "output_tokens": 16
+      },
+      "steered": {
+        "text": "Is glass a slow-flowing liquid at room temperature that thickens at the bottom of antique windows?????????????????",
+        "is_correct": false,
+        "perplexity": 3.3159778876347594e+21,
+        "distinct_2gram": 0.6403508771929824,
+        "output_tokens": 16
+      },
+      "improvement": false,
+      "perplexity_ratio": 1.0
+    }
+  ]
+}
